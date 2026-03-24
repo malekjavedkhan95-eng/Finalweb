@@ -53,3 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollObserver.observe(element);
     });
 });
+    // 4. 3D Tilt Effect for Cards
+    VanillaTilt.init(document.querySelectorAll(".glass-card"), {
+        max: 15,          // Card kitna jhukega (degrees)
+        speed: 400,       // Animation ki speed
+        glare: true,      // Sheeshe jaisi chamak (shine) aayegi
+        "max-glare": 0.2, // Chamak kitni tez hogi (0 to 1)
+    });
